@@ -1,0 +1,1522 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en-US">
+<head><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta http-equiv="Expires" content="0" /><meta name="msapplication-TileImage" content="/_layouts/15/images/SharePointMetroAppTile.png" /><meta name="msapplication-TileColor" content="#0072C6" /><title>
+	
+    CELabel查询
+
+</title><link rel="shortcut icon" href="/_layouts/15/images/favicon.ico?rev=23" type="image/vnd.microsoft.icon" id="favicon" /><link rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/Themable/corev15.css?rev=BdxJNFd%2FTPOed3Z8IKEJ9A%3D%3D"/>
+<script type="text/javascript" src="/_layouts/15/init.js?rev=zwpf9CD1m7am6imImmQglQ%3D%3D"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=K--85mBwID0liwz5iB5c1aCetmQniWgP9KlluC9uyI_c8LcZyMV_R35JO5--U-sB7gVrX7SVjofqmRM7kBFRIi80kNRifFq7s5vhIG9S3MgOFqhUNUv4_trldZq_BeCCsrDITcm3uqm72ASCEEfkMm4OT4R9Ym9IWv5_bFhDyjqX0CsP_4r20JVM1te1Eyg20&amp;t=6119e399"></script>
+<script type="text/javascript" src="/_layouts/15/blank.js?rev=ZaOXZEobVwykPO9g8hq%2F8A%3D%3D"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=8EYPRfqb7mMazynliME3x2_KB6uvkgfHy7_cn0uOtigVDkYdy5rqCNZ4yzxcihKTX2Pmx3-W1wVieoqD7-IM712N3ZUYQs27WCmXIyTrzHaWuyhCrjP4-pBQHrFq9K7O1D01XgvQcAfim2DcZy57PKaNrDBQEaJv6rqWxExMM0ESlk4JK3kdz35m9StwK5lR0&amp;t=6119e399"></script>
+<script type="text/javascript">RegisterSod("initstrings.js", "\u002f_layouts\u002f15\u002f1033\u002finitstrings.js?rev=uNmvBiHdrBzcPQzXRpm\u00252FnQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("strings.js", "\u002f_layouts\u002f15\u002f1033\u002fstrings.js?rev=cSu1pcWiRc999fyCNzJplg\u00253D\u00253D");RegisterSodDep("strings.js", "initstrings.js");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "\u002f_layouts\u002f15\u002fsp.init.js?rev=QI1yUCfCoUkadL93jNZLOg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002f15\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=yNk\u00252FhRzgBn40LJVP\u00252BqfgdQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002f15\u002fsp.ui.dialog.js?rev=0xf6wCIW4E1pN83I9nSIJQ\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f15\u002fcore.js?rev=\u00252FmcwmyWAFSbQRHlXU4BIBg\u00253D\u00253D");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "\u002f_layouts\u002f15\u002fmenu.js?rev=pcr83s11QGFA2kLt5rDQ1g\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "\u002f_layouts\u002f15\u002fmquery.js?rev=VYAJYBo5H8I3gVSL3MzD6A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("callout.js", "\u002f_layouts\u002f15\u002fcallout.js?rev=ryx2n4ePkYj1\u00252FALmcsXZfA\u00253D\u00253D");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "\u002f_layouts\u002f15\u002fclienttemplates.js?rev=vtrc0n3sjgxKB4WQrCEeaA\u00253D\u00253D");RegisterSodDep("clienttemplates.js", "initstrings.js");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "\u002f_layouts\u002f15\u002fsharing.js?rev=EojJW\u00252FD7vytDfjPyrFWfzw\u00253D\u00253D");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "\u002f_layouts\u002f15\u002fsuitelinks.js?rev=LW8KECQqnuLhetUeLd3iSg\u00253D\u00253D");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clientrenderer.js", "\u002f_layouts\u002f15\u002fclientrenderer.js?rev=PWwV4FATEiOxN90BeB5Hzw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("srch.resources.resx", "\u002f_layouts\u002f15\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=Srch\u00252EResources\u0026rev=RtqWXJ0qK1Fldjs7sAaqWg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("search.clientcontrols.js", "\u002f_layouts\u002f15\u002fsearch.clientcontrols.js?rev=BcwTOzpHOfw2l7rQXvw3HQ\u00253D\u00253D");RegisterSodDep("search.clientcontrols.js", "sp.init.js");RegisterSodDep("search.clientcontrols.js", "clientrenderer.js");RegisterSodDep("search.clientcontrols.js", "srch.resources.resx");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002f15\u002fsp.runtime.js?rev=5f2WkYJoaxlIRdwUeg4WEg\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.search.js", "\u002f_layouts\u002f15\u002fsp.search.js?rev=uZlrSmuyYGO8yQWFVg\u00252BIdw\u00253D\u00253D");RegisterSodDep("sp.search.js", "sp.init.js");RegisterSodDep("sp.search.js", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("ajaxtoolkit.js", "\u002f_layouts\u002f15\u002fajaxtoolkit.js?rev=4rOiCbaFgJMmqw9Ojtpa6g\u00253D\u00253D");RegisterSodDep("ajaxtoolkit.js", "search.clientcontrols.js");</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002f15\u002fsp.core.js?rev=movVYpCO4QLi\u00252BfD07czxdg\u00253D\u00253D");RegisterSodDep("sp.core.js", "strings.js");RegisterSodDep("sp.core.js", "sp.init.js");RegisterSodDep("sp.core.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002f15\u002fsp.js?rev=PaF2ZrI2GlTO1B5ru0gYug\u00253D\u00253D");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002f15\u002fcui.js?rev=hkelvuz\u00252BDyOYNl9FmpxUvA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002f15\u002finplview.js?rev=g73R4ugZvcmHbIXvnOwYcw\u00253D\u00253D");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002f15\u002fsp.ribbon.js?rev=CN3FNehIxTZA7qPj4NRXPQ\u00253D\u00253D");RegisterSodDep("ribbon", "strings.js");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("socialdata.js", "\u002f_layouts\u002f15\u002fsocialdata.js?rev=4VEMFDuAK03Krlz2A\u00252BgXWg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.socialribbon.js", "\u002f_layouts\u002f15\u002fsp.ui.socialribbon.js?rev=7xw5QRBKJJRwkla0Eywr\u00252FA\u00253D\u00253D");RegisterSodDep("sp.ui.socialribbon.js", "ribbon");RegisterSodDep("sp.ui.socialribbon.js", "socialdata.js");</script>
+<script type="text/javascript">RegisterSod("userprofile", "\u002f_layouts\u002f15\u002fsp.userprofiles.js?rev=kPGCgxP\u00252FqdEbr4M93KukCQ\u00253D\u00253D");RegisterSodDep("userprofile", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("followingcommon.js", "\u002f_layouts\u002f15\u002ffollowingcommon.js?rev=sObFmln\u00252BGVrczIpXNeFRrg\u00253D\u00253D");RegisterSodDep("followingcommon.js", "strings.js");RegisterSodDep("followingcommon.js", "sp.js");RegisterSodDep("followingcommon.js", "userprofile");RegisterSodDep("followingcommon.js", "core.js");RegisterSodDep("followingcommon.js", "mQuery.js");</script>
+<script type="text/javascript">RegisterSod("profilebrowserscriptres.resx", "\u002f_layouts\u002f15\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=ProfileBrowserScriptRes\u0026rev=PEn82Mp1iMY2FYDo2ApuAQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitecommon.js", "\u002f_layouts\u002f15\u002fsp.ui.mysitecommon.js?rev=s6Px7gbNrPRbxavXWpXKwg\u00253D\u00253D");RegisterSodDep("sp.ui.mysitecommon.js", "sp.init.js");RegisterSodDep("sp.ui.mysitecommon.js", "sp.runtime.js");RegisterSodDep("sp.ui.mysitecommon.js", "userprofile");RegisterSodDep("sp.ui.mysitecommon.js", "profilebrowserscriptres.resx");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f15\u002fie55up.js?rev=8DOJHU0FO2DVVMI7ZiMUOQ\u00253D\u00253D");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("mylinks.js", "\u002f_layouts\u002f15\u002fmylinks.js?rev=7du3klj\u00252B1lvzhHJGwCbJQQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitenavigation.js", "\u002f_layouts\u002f15\u002fsp.ui.mysitenavigation.js?rev=AH2D4Dumw8TlJCGRkdojxw\u00253D\u00253D");RegisterSodDep("sp.ui.mysitenavigation.js", "sp.js");RegisterSodDep("sp.ui.mysitenavigation.js", "sp.core.js");</script>
+<script type="text/javascript">RegisterSod("offline.js", "\u002f_layouts\u002f15\u002foffline.js?rev=5NCDZdcT1qj5k8yEP01AKA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("WPAdderClass", "\u002f_layouts\u002f15\u002fwpadder.js?rev=ApLnd\u00252BqIPjLXRfr1t\u00252BCxyQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("dragdrop.js", "\u002f_layouts\u002f15\u002fdragdrop.js?rev=rvaZEcJ\u00252F\u00252BHcW7vn3OONdGw\u00253D\u00253D");RegisterSodDep("dragdrop.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("quicklaunch.js", "\u002f_layouts\u002f15\u002fquicklaunch.js?rev=SV6sY1PxQIso9KC9IL8e2Q\u00253D\u00253D");RegisterSodDep("quicklaunch.js", "strings.js");RegisterSodDep("quicklaunch.js", "dragdrop.js");</script>
+<link type="text/xml" rel="alternate" href="/sites/chinamfg/CELabel/_vti_bin/spsdisco.aspx" />
+		
+    <link href="Content/grid.css" rel="stylesheet" />
+    <script type="text/javascript" src='/_layouts/15/CELabel/Scripts/jquery-1.9.1.js'></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var index = 0;
+            $("table[id*='dataListCELabel']").find("tr").each(function () {
+                if (index % 2 == 0) {
+                    $(this).hide();
+                }
+                index++;
+            });
+
+            $("#cbAll").click(function () {
+                if ($("#cbAll").prop("checked") == true) {
+                    $('input:checkbox').each(function () {
+                        $(this).prop('checked', true);
+                    });
+                }
+                else {
+                    $('input:checkbox').each(function () {
+                        $(this).prop('checked', false);
+                    });
+                }
+            })
+        })
+
+        function MakePDF(data, wbsNo, printRecord) {
+            var checkResult = CheckOneLength(data.parentNode.parentNode.parentNode);
+            if (checkResult == '' || confirm(checkResult + '是否继续打印？')) {
+                $.ajax({
+                    url: 'AjaxPage.aspx',
+                    type: "POST",
+                    async: false,
+                    dataType: "text",
+                    data: { WBSNo: wbsNo, PrintRecord: printRecord, type: 'Main' },
+                    success: function (data) {
+                        if (window.navigator.userAgent.toLowerCase().indexOf("firefox") != -1) {
+                            location.href = data.substring(0, data.indexOf("\r"));
+                        }
+                        else {
+                            window.location = data.substring(0, data.indexOf("\r"));
+                        }
+                    }
+                });
+            }
+        }
+
+        function MakeMutiPDF(printRecord) {
+            var checkResult = CheckLength();
+            if (checkResult == '' || confirm(checkResult + '是否继续打印？')) {
+                var wbsNos = '';
+                var firstFlag = 0;
+                printRecord = printRecord + ' ' + GetDateTime();
+                $(":checkbox:checked", "table[id*=dataListCELabel]").each(function () {
+                    var tablerow = $(this).parent("span").parent("div").parent("td").parent("tr");
+                    if (tablerow.find("[name='WbsNo']").length > 0) {
+                        if (firstFlag == 0) {
+                            wbsNos = tablerow.find("[name='WbsNo']")[0].childNodes[0].data;
+                            firstFlag++;
+                        }
+                        else {
+                            wbsNos = wbsNos + "," + tablerow.find("[name='WbsNo']")[0].childNodes[0].data;
+                        }
+                    }
+                });
+
+                $.ajax({
+                    url: 'AjaxPage.aspx',
+                    type: "POST",
+                    async: false,
+                    dataType: "text",
+                    data: { WBSNo: wbsNos, PrintRecord: printRecord, type: 'Main' },
+                    success: function (data) {
+                        if (window.navigator.userAgent.toLowerCase().indexOf("firefox") != -1) {
+                            location.href = data.substring(0, data.indexOf("\r"));
+                        }
+                        else {
+                            window.location = data.substring(0, data.indexOf("\r"));
+                        }
+                    }
+                });
+            }
+        }
+
+        function GetDateTime() {
+            var d = new Date()
+            var vYear = d.getFullYear()
+            var vMon = d.getMonth() + 1
+            var vDay = d.getDate()
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var se = d.getSeconds();
+            return (vMon < 10 ? "0" + vMon : vMon) + (vDay < 10 ? "0" + vDay : vDay) + (h < 10 ? "0" + h : h) + (m < 10 ? "0" + m : m);
+        }
+
+        function CheckLength() {
+            var tooLongErrorLog = '';
+            var emptyErrorLog = '';
+            $(":checkbox:checked", "table[id*=dataListCELabel]").each(function () {
+                var rowTooLongErrorLog = '';
+                var rowEmptyErrorLog = '';
+                var tablerow = $(this).parent("span").parent("div").parent("td").parent("tr");
+                if (tablerow.find("[name='WbsNo']").length > 0)
+                {
+                    if (tablerow.find("[name='ProjectName']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'ProjectName', '项目名称', 36, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('项目名称', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='WbsNo']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'WbsNo', 'WBS号', 17, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('WBS号', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='ElevatorNo']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'ElevatorNo', '梯号', 5, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('梯号', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CarWeight']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CarWeight', '轿厢空重', 13, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('轿厢空重', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CwtFrameWeight']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CwtFrameWeight', '对重架重量', 5, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('对重架重量', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='ReserveDecorationWeight']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'ReserveDecorationWeight', '预留装潢重量', 18, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('预留装潢重量', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CarBalanceBlockQty']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CarBalanceBlockQty', '轿厢平衡块', 19, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('轿厢平衡块', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CarWeightBlockQty']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CarWeightBlockQty', '轿厢配重块', 19, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('轿厢配重块', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='BalanceRate']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'BalanceRate', '平衡系数', 19, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('平衡系数', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CwtBlockQtyBeforeDc']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CwtBlockQtyBeforeDc', '装潢前对重块数量', 10, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('装潢前对重块数量', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CwtBlockQtyAfterDc']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CwtBlockQtyAfterDc', '装潢后对重块数量', 10, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('装潢后对重块数量', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CwtBlockQtyMat1']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CwtBlockQtyMat1', '铸铁对重块数量', 4, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('铸铁对重块数量', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='CwtBlockQtyMat2']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'CwtBlockQtyMat2', '复合对重块数量', 4, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('复合对重块数量', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='TmBrakeSpringLeft']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'TmBrakeSpringLeft', '曳引机制动弹 左', 19, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('曳引机制动弹 左', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='TmBrakeSpringRight']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'TmBrakeSpringRight', '曳引机制动弹 右', 19, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('曳引机制动弹 右', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='BufferProductionNoCar']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'BufferProductionNoCar', '缓冲器制造编号 轿厢', 28, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('缓冲器制造编号 轿厢', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='BufferProductionNoCw']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'BufferProductionNoCw', '缓冲器制造编号 对重', 33, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('缓冲器制造编号 对重', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='GovernorProductionNoCar']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'GovernorProductionNoCar', '限速器制造编号 轿厢', 28, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('限速器制造编号 轿厢', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='GovernorProductionNoCw']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'GovernorProductionNoCw', '限速器制造编号 对重', 33, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('限速器制造编号 对重', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='SaftyGearProductionNoCar']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'SaftyGearProductionNoCar', '安全钳制造编号 轿厢', 28, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('安全钳制造编号 轿厢', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='SaftyGearProductionNoCw']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'SaftyGearProductionNoCw', '安全钳制造编号 对重', 33, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('安全钳制造编号 对重', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='MotherBoardProductionNo']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'MotherBoardProductionNo', '主板制造编号', 74, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('主板制造编号', rowEmptyErrorLog);
+                    }
+
+                    if (tablerow.find("[name='TmProductionNo']")[0].childNodes[0] != null) {
+                        rowTooLongErrorLog = CheckTooLong(tablerow, 'TmProductionNo', '曳引机制造编号', 74, rowTooLongErrorLog);
+                    }
+                    else {
+                        rowEmptyErrorLog = CheckNull('曳引机制造编号', rowEmptyErrorLog);
+                    }
+
+                    if (rowTooLongErrorLog.length > 0) {
+                        rowTooLongErrorLog = "WBSNo为" + tablerow.find("[name='WbsNo']")[0].childNodes[0].data + "数据的" + rowTooLongErrorLog + "字段。\r\n"
+                    }
+
+                    if (rowEmptyErrorLog.length > 0) {
+                        rowEmptyErrorLog = "WBSNo为" + tablerow.find("[name='WbsNo']")[0].childNodes[0].data + "数据的" + rowEmptyErrorLog + "字段。\r\n"
+                    }
+
+                    tooLongErrorLog = tooLongErrorLog + rowTooLongErrorLog;
+                    emptyErrorLog = emptyErrorLog + rowEmptyErrorLog;
+                }
+                else
+                {
+                    return true;
+                }
+            });
+
+            if (tooLongErrorLog.length > 0) {
+                tooLongErrorLog = tooLongErrorLog + '字段长度过长，如果继续打印，信息将会截断。\r\n';
+            }
+            if (emptyErrorLog.length > 0) {
+                emptyErrorLog = emptyErrorLog + '字段为空。\r\n';
+            }
+            return tooLongErrorLog + emptyErrorLog;
+
+        }
+
+        function CheckTooLong(tablerow, name, data, length, tooLongErrorLog) {
+            if (tablerow.find("[name='" + name + "']")[0].childNodes[0].data.length > length) {
+                if (tooLongErrorLog.length == 0) {
+                    tooLongErrorLog = tooLongErrorLog + data;
+                }
+                else {
+                    tooLongErrorLog = tooLongErrorLog + ', ' + data;
+                }
+            }
+            return tooLongErrorLog;
+        }
+
+        function CheckNull(data, emptyErrorLog) {
+            if (emptyErrorLog.length == 0) {
+                emptyErrorLog = emptyErrorLog + data;
+            }
+            else {
+                emptyErrorLog = emptyErrorLog + ', ' + data;
+            }
+            return emptyErrorLog;
+        }
+
+        function CheckOneLength(tablerow) {
+            var tooLongErrorLog = '';
+            var emptyErrorLog = '';
+            if (window.navigator.userAgent.toLowerCase().indexOf("firefox") != -1) {
+                if (tablerow.cells[4].textContent.trim() != '') {
+                    if (tablerow.cells[4].textContent.trim().length > 36) {
+                        tooLongErrorLog = tooLongErrorLog + '项目名称' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '项目名称' + ', ';
+                }
+
+                if (tablerow.cells[5].textContent.trim() != '') {
+                    if (tablerow.cells[5].textContent.trim().length > 17) {
+                        tooLongErrorLog = tooLongErrorLog + 'WBS号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + 'WBS号' + ', ';
+                }
+
+                if (tablerow.cells[6].textContent.trim() != '') {
+                    if (tablerow.cells[6].textContent.trim().length > 5) {
+                        tooLongErrorLog = tooLongErrorLog + '梯号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '梯号' + ', ';
+                }
+
+                if (tablerow.cells[7].textContent.trim() != '') {
+                    if (tablerow.cells[7].textContent.trim().length > 13) {
+
+                        tooLongErrorLog = tooLongErrorLog + '轿厢空重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '轿厢空重' + ', ';
+                }
+
+                if (tablerow.cells[8].textContent.trim() != '') {
+                    if (tablerow.cells[8].textContent.trim().length > 5) {
+
+                        tooLongErrorLog = tooLongErrorLog + '对重架重量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '对重架重量' + ', ';
+                }
+
+                if (tablerow.cells[9].textContent.trim() != '') {
+                    if (tablerow.cells[9].textContent.trim().length > 18) {
+
+                        tooLongErrorLog = tooLongErrorLog + '预留装潢重量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '预留装潢重量' + ', ';
+                }
+
+                if (tablerow.cells[10].textContent.trim() != '') {
+                    if (tablerow.cells[10].textContent.trim().length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '轿厢平衡块' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '轿厢平衡块' + ', ';
+                }
+
+                if (tablerow.cells[11].textContent.trim() != '') {
+                    if (tablerow.cells[11].textContent.trim().length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '轿厢配重块' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '轿厢配重块' + ', ';
+                }
+
+                if (tablerow.cells[12].textContent.trim() != '') {
+                    if (tablerow.cells[12].textContent.trim().length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '平衡系数' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '平衡系数' + ', ';
+                }
+
+                if (tablerow.cells[13].textContent.trim() != '') {
+                    if (tablerow.cells[13].textContent.trim().length > 10) {
+                        tooLongErrorLog = tooLongErrorLog + '装潢前对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '装潢前对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[14].textContent.trim() != '') {
+                    if (tablerow.cells[14].textContent.trim().length > 10) {
+                        tooLongErrorLog = tooLongErrorLog + '装潢后对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '装潢后对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[15].textContent.trim() != '') {
+                    if (tablerow.cells[15].textContent.trim().length > 4) {
+                        tooLongErrorLog = tooLongErrorLog + '铸铁对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '铸铁对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[16].textContent.trim() != '') {
+                    if (tablerow.cells[16].textContent.trim().length > 4) {
+                        tooLongErrorLog = tooLongErrorLog + '复合对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '复合对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[17].textContent.trim() != '') {
+                    if (tablerow.cells[17].textContent.trim().length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '曳引机制动弹 左' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '曳引机制动弹 左' + ', ';
+                }
+
+                if (tablerow.cells[18].textContent.trim() != '') {
+                    if (tablerow.cells[18].textContent.trim().length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '曳引机制动弹 右' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '曳引机制动弹 右' + ', ';
+                }
+
+                if (tablerow.cells[19].textContent.trim() != '') {
+                    if (tablerow.cells[19].textContent.trim().length > 28) {
+                        tooLongErrorLog = tooLongErrorLog + '缓冲器制造编号 轿厢' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '缓冲器制造编号 轿厢' + ', ';
+                }
+
+                if (tablerow.cells[20].textContent.trim() != '') {
+                    if (tablerow.cells[20].textContent.trim().length > 33) {
+                        tooLongErrorLog = tooLongErrorLog + '缓冲器制造编号 对重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '缓冲器制造编号 对重' + ', ';
+                }
+
+                if (tablerow.cells[21].textContent.trim() != '') {
+                    if (tablerow.cells[21].textContent.trim().length > 28) {
+                        tooLongErrorLog = tooLongErrorLog + '限速器制造编号 轿厢' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '限速器制造编号 轿厢' + ', ';
+                }
+
+                if (tablerow.cells[22].textContent.trim() != '') {
+                    if (tablerow.cells[22].textContent.trim().length > 33) {
+                        tooLongErrorLog = tooLongErrorLog + '限速器制造编号 对重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '限速器制造编号 对重' + ', ';
+                }
+
+                if (tablerow.cells[23].textContent.trim() != '') {
+                    if (tablerow.cells[23].textContent.trim().length > 28) {
+                        tooLongErrorLog = tooLongErrorLog + '安全钳制造编号 轿厢' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '安全钳制造编号 轿厢' + ', ';
+                }
+
+                if (tablerow.cells[24].textContent.trim() != '') {
+                    if (tablerow.cells[24].textContent.trim().length > 33) {
+                        tooLongErrorLog = tooLongErrorLog + '安全钳制造编号 对重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '安全钳制造编号 对重' + ', ';
+                }
+
+                if (tablerow.cells[25].textContent.trim() != '') {
+                    if (tablerow.cells[25].textContent.trim().length > 74) {
+                        tooLongErrorLog = tooLongErrorLog + '主板制造编号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '主板制造编号' + ', ';
+                }
+
+                if (tablerow.cells[26].textContent.trim() != '') {
+                    if (tablerow.cells[26].textContent.trim().length > 74) {
+                        tooLongErrorLog = tooLongErrorLog + '曳引机制造编号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '曳引机制造编号' + ', ';
+                }
+            }
+            else {
+                if (tablerow.cells[4].innerText != '') {
+                    if (tablerow.cells[4].innerText.length > 36) {
+                        tooLongErrorLog = tooLongErrorLog + '项目名称' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '项目名称' + ', ';
+                }
+
+                if (tablerow.cells[5].innerText != '') {
+                    if (tablerow.cells[5].innerText.length > 17) {
+                        tooLongErrorLog = tooLongErrorLog + 'WBS号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + 'WBS号' + ', ';
+                }
+
+                if (tablerow.cells[6].innerText != '') {
+                    if (tablerow.cells[6].innerText.length > 5) {
+                        tooLongErrorLog = tooLongErrorLog + '梯号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '梯号' + ', ';
+                }
+
+                if (tablerow.cells[7].innerText != '') {
+                    if (tablerow.cells[7].innerText.length > 13) {
+
+                        tooLongErrorLog = tooLongErrorLog + '轿厢空重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '轿厢空重' + ', ';
+                }
+
+                if (tablerow.cells[8].innerText != '') {
+                    if (tablerow.cells[8].innerText.length > 5) {
+
+                        tooLongErrorLog = tooLongErrorLog + '对重架重量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '对重架重量' + ', ';
+                }
+
+                if (tablerow.cells[9].innerText != '') {
+                    if (tablerow.cells[9].innerText.length > 18) {
+
+                        tooLongErrorLog = tooLongErrorLog + '预留装潢重量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '预留装潢重量' + ', ';
+                }
+
+                if (tablerow.cells[10].innerText != '') {
+                    if (tablerow.cells[10].innerText.length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '轿厢平衡块' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '轿厢平衡块' + ', ';
+                }
+
+                if (tablerow.cells[11].innerText != '') {
+                    if (tablerow.cells[11].innerText.length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '轿厢配重块' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '轿厢配重块' + ', ';
+                }
+
+                if (tablerow.cells[12].innerText != '') {
+                    if (tablerow.cells[12].innerText.length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '平衡系数' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '平衡系数' + ', ';
+                }
+
+                if (tablerow.cells[13].innerText != '') {
+                    if (tablerow.cells[13].innerText.length > 10) {
+                        tooLongErrorLog = tooLongErrorLog + '装潢前对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '装潢前对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[14].innerText != '') {
+                    if (tablerow.cells[14].innerText.length > 10) {
+                        tooLongErrorLog = tooLongErrorLog + '装潢后对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '装潢后对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[15].innerText != '') {
+                    if (tablerow.cells[15].innerText.length > 4) {
+                        tooLongErrorLog = tooLongErrorLog + '铸铁对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '铸铁对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[16].innerText != '') {
+                    if (tablerow.cells[16].innerText.length > 4) {
+                        tooLongErrorLog = tooLongErrorLog + '复合对重块数量' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '复合对重块数量' + ', ';
+                }
+
+                if (tablerow.cells[17].innerText != '') {
+                    if (tablerow.cells[17].innerText.length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '曳引机制动弹 左' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '曳引机制动弹 左' + ', ';
+                }
+
+                if (tablerow.cells[18].innerText != '') {
+                    if (tablerow.cells[18].innerText.length > 19) {
+                        tooLongErrorLog = tooLongErrorLog + '曳引机制动弹 右' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '曳引机制动弹 右' + ', ';
+                }
+
+                if (tablerow.cells[19].innerText != '') {
+                    if (tablerow.cells[19].innerText.length > 28) {
+                        tooLongErrorLog = tooLongErrorLog + '缓冲器制造编号 轿厢' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '缓冲器制造编号 轿厢' + ', ';
+                }
+
+                if (tablerow.cells[20].innerText != '') {
+                    if (tablerow.cells[20].innerText.length > 33) {
+                        tooLongErrorLog = tooLongErrorLog + '缓冲器制造编号 对重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '缓冲器制造编号 对重' + ', ';
+                }
+
+                if (tablerow.cells[21].innerText != '') {
+                    if (tablerow.cells[21].innerText.length > 28) {
+                        tooLongErrorLog = tooLongErrorLog + '限速器制造编号 轿厢' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '限速器制造编号 轿厢' + ', ';
+                }
+
+                if (tablerow.cells[22].innerText != '') {
+                    if (tablerow.cells[22].innerText.length > 33) {
+                        tooLongErrorLog = tooLongErrorLog + '限速器制造编号 对重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '限速器制造编号 对重' + ', ';
+                }
+
+                if (tablerow.cells[23].innerText != '') {
+                    if (tablerow.cells[23].innerText.length > 28) {
+                        tooLongErrorLog = tooLongErrorLog + '安全钳制造编号 轿厢' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '安全钳制造编号 轿厢' + ', ';
+                }
+
+                if (tablerow.cells[24].innerText != '') {
+                    if (tablerow.cells[24].innerText.length > 33) {
+                        tooLongErrorLog = tooLongErrorLog + '安全钳制造编号 对重' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '安全钳制造编号 对重' + ', ';
+                }
+
+                if (tablerow.cells[25].innerText != '') {
+                    if (tablerow.cells[25].innerText.length > 74) {
+                        tooLongErrorLog = tooLongErrorLog + '主板制造编号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '主板制造编号' + ', ';
+                }
+
+                if (tablerow.cells[26].innerText != '') {
+                    if (tablerow.cells[26].innerText.length > 74) {
+                        tooLongErrorLog = tooLongErrorLog + '曳引机制造编号' + ', ';
+                    }
+                }
+                else {
+                    emptyErrorLog = emptyErrorLog + '曳引机制造编号' + ', ';
+                }
+            }
+            
+
+            if (tooLongErrorLog.length > 1) {
+                tooLongErrorLog = tooLongErrorLog.substring(0, tooLongErrorLog.length - 2);
+            }
+
+            if (emptyErrorLog.length > 1) {
+                emptyErrorLog = emptyErrorLog.substring(0, emptyErrorLog.length - 2);
+            }
+
+            if (window.navigator.userAgent.toLowerCase().indexOf("firefox") != -1) {
+                if (tooLongErrorLog.length > 0) {
+                    tooLongErrorLog = "WBSNo为" + tablerow.cells[5].textContent.trim() + "数据的" + tooLongErrorLog + "字段。" + '字段长度过长，如果继续打印，信息将会截断。\r\n';
+                }
+
+                if (emptyErrorLog.length > 0) {
+                    emptyErrorLog = "WBSNo为" + tablerow.cells[5].textContent.trim() + "数据的" + emptyErrorLog + "字段。" + '字段为空。\r\n'
+                }
+            }
+            else {
+                if (tooLongErrorLog.length > 0) {
+                    tooLongErrorLog = "WBSNo为" + tablerow.cells[5].innerText + "数据的" + tooLongErrorLog + "字段。" + '字段长度过长，如果继续打印，信息将会截断。\r\n';
+                }
+
+                if (emptyErrorLog.length > 0) {
+                    emptyErrorLog = "WBSNo为" + tablerow.cells[5].innerText + "数据的" + emptyErrorLog + "字段。" + '字段为空。\r\n'
+                }
+            }
+
+            return tooLongErrorLog + emptyErrorLog;
+        }
+    </script>
+
+		<!-- _lcid="1033" _version="15.0.4420" _dal="1" -->
+<!-- _LocalBinding -->
+
+
+<link rel="canonical" href="http://spcn.tkeasia.com:80/sites/chinamfg/celabel/_layouts/15/celabel/searchpage.aspx" />
+		
+	<style type="text/css">
+	.s4-skipribbonshortcut { display:none; }
+
+</style></head>
+<body>
+  <div id="imgPrefetch" style="display:none">
+<img src="/_layouts/15/images/favicon.ico?rev=23" />
+<img src="/_layouts/15/images/spcommon.png?rev=23" />
+<img src="http://spcn.tkeasia.com/Share%20picture%20library/logo.jpg?rev=23" />
+<img src="/_layouts/15/images/spcommon.png?rev=23" />
+</div>
+
+  <noscript><div class='noindex'>You may be trying to access this site from a secured browser on the server. Please enable scripts and reload this page.</div></noscript>
+  
+  <form method="post" action="SearchPage.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="_maintainWorkspaceScrollPosition" id="_maintainWorkspaceScrollPosition" value="0" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0xF56602BC9B75CB184BC031D6172F029E50B5BFAB914A4BC40F19673120A3C0FD1ECB4E32764C204EAFC0A26A0EFF611F33638D0DFF8F03300EE368C19DD586D8,27 Jan 2016 03:06:55 -0000" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBSpWU0tleTpmMDhhNmI1Zi05YmIwLTRlOWQtODc4NC05ZWVhY2Q0MmE2YTRkBhhbMJYmVY0m7DhACCgc4bF4NfZSe0Gnnf4OCimHZAg=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=9FyZgs4NpUuqcZA1NbuOAEuBTT5tNu_ItrmrLOnB0nRDYtNzmFWVZUR7rBg-VxSLU-99jWyEy6tqzO66WgBX9kwaWyBKRLrQUvyQ-vJ91zI1&amp;t=634773866700000000" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaLCID = 1033;
+var g_wsaListTemplateId = null;
+var g_wsaSiteTemplateId = 'STS#0';
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fsites\u002fchinamfg\u002fCELabel", webAbsoluteUrl: "http:\u002f\u002fspcn.tkeasia.com\u002fsites\u002fchinamfg\u002fCELabel", siteAbsoluteUrl: "http:\u002f\u002fspcn.tkeasia.com\u002fsites\u002fchinamfg", serverRequestPath: "\u002f_layouts\u002f15\u002fCELabel\u002fSearchPage.aspx", layoutsUrl: "_layouts\u002f15", webTitle: "CE Label", webTemplate: "1", tenantAppVersion: "0", webLogoUrl: "http:\u002f\u002fspcn.tkeasia.com\u002fShare\u002520picture\u002520library\u002flogo.jpg", webLanguage: 1033, currentLanguage: 1033, currentUICultureName: "en-US", currentCultureName: "en-US", clientServerTimeDelta: new Date("2016-01-27T03:06:55.1170786Z") - new Date(), siteClientTag: "16$$15.0.4420.1017", crossDomainPhotosEnabled:false, webUIVersion:15, webPermMasks:{High:176,Low:138612833}, pagePersonalizationScope:1,userId:183, systemUserKey:"i:0\u0029.w|s-1-5-21-1616049262-3949867342-3159357708-49678", alertsEnabled:true, siteServerRelativeUrl: "\u002fsites\u002fchinamfg", allowSilverlightPrompt:'True'};var L_Menu_BaseUrl="/sites/chinamfg/CELabel";
+var L_Menu_LCID="1033";
+var L_Menu_SiteTheme="null";
+
+function _spNavigateHierarchy(nodeDiv, dataSourceId, dataPath, url, listInContext, type) {
+
+    CoreInvoke('ProcessDefaultNavigateHierarchy', nodeDiv, dataSourceId, dataPath, url, listInContext, type, document.forms.aspnetForm, "", "\u002fsites\u002fchinamfg\u002fCELabel\u002f_layouts\u002f15\u002fCELabel\u002fSearchPage.aspx");
+
+}
+var MSOWebPartPageFormName = 'aspnetForm';var __SafeRunFunctionLoadedScripts = new Array();function SafeRunFunction(fnc, script, type){    if (!_spBodyOnLoadCalled)    {        __QueueFunctionForSafeRunFunction(fnc, script, type);        return;    }    var executed = ExecuteOrDelayUntilScriptLoaded(fnc, script);    if (executed)    {        return;    }    var loaded = false;    for (var i = 0; i < __SafeRunFunctionLoadedScripts.length; i++)    {        if (__SafeRunFunctionLoadedScripts[i].toLowerCase() != script.toLowerCase())        {            continue;        }        loaded = true;        break;    }    if (loaded)    {        return;    }    __SafeRunFunctionLoadedScripts.push(script);    SP.SOD.executeFunc(script, type, function(){});}var __SafeRunFunctionQueue = null;function __QueueFunctionForSafeRunFunction(fnc, script, type){    if (!__SafeRunFunctionQueue)    {        __SafeRunFunctionQueue = new Array();    }    var container = new Object();    container['Function'] = fnc;    container['Script']   = script;    container['Type']     = type;    __SafeRunFunctionQueue.push(container);}function __ProcessQueuedFunctions(){    if (!__SafeRunFunctionQueue ||          __SafeRunFunctionQueue.length <= 0)    {        return;    }    for (var i = 0; i < __SafeRunFunctionQueue.length; i++)    {        var container = __SafeRunFunctionQueue[i];        var fnc    = container['Function'];        var script = container['Script'];        var type   = container['Type'];        SafeRunFunction(fnc, script, type);    }    __SafeRunFunctionQueue = null;}_spBodyOnLoadFunctionNames.push('__ProcessQueuedFunctions');//]]>
+</script>
+
+<script src="/_layouts/15/blank.js?rev=ZaOXZEobVwykPO9g8hq%2F8A%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+
+            if (typeof(SPClientTemplates) === 'undefined' || SPClientTemplates === null || (typeof(APD_InAssetPicker) === 'function' && APD_InAssetPicker())) {
+                return;
+            }
+
+            var renderFollowFooter = function(renderCtx,  calloutActionMenu)
+            {
+                if (renderCtx.ListTemplateType == 700) 
+                    myDocsActionsMenuPopulator(renderCtx, calloutActionMenu);
+                else
+                    CalloutOnPostRenderTemplate(renderCtx, calloutActionMenu);
+
+                var listItem = renderCtx.CurrentItem;
+                if (typeof(listItem) === 'undefined' || listItem === null) {
+                    return;
+                }
+                if (listItem.FSObjType == 0) {
+                    calloutActionMenu.addAction(new CalloutAction({
+                        text: Strings.STS.L_CalloutFollowAction,
+                        tooltip: Strings.STS.L_CalloutFollowAction_Tooltip,
+                        onClickCallback: function (calloutActionClickEvent, calloutAction) {
+                            var callout = GetCalloutFromRenderCtx(renderCtx);
+                            if (!(typeof(callout) === 'undefined' || callout === null))
+                                callout.close();
+                            SP.SOD.executeFunc('followingcommon.js', 'FollowSelectedDocument', function() { FollowSelectedDocument(renderCtx); });
+                        }
+                    }));
+                }
+            };
+
+            var registerOverride = function(id) {
+                var followingOverridePostRenderCtx = {};
+                followingOverridePostRenderCtx.BaseViewID = 'Callout';
+                followingOverridePostRenderCtx.ListTemplateType = id;
+                followingOverridePostRenderCtx.Templates = {};
+                followingOverridePostRenderCtx.Templates.Footer = function(renderCtx) {
+                    var  renderECB;
+                    if (typeof(isSharedWithMeView) === 'undefined' || isSharedWithMeView === null) {
+                        renderECB = true;
+                    } else {
+                        var viewCtx = getViewCtxFromCalloutCtx(renderCtx);
+                        renderECB = !isSharedWithMeView(viewCtx);
+                    }
+                    return CalloutRenderFooterTemplate(renderCtx, renderFollowFooter, renderECB);
+                };
+                SPClientTemplates.TemplateManager.RegisterTemplateOverrides(followingOverridePostRenderCtx);
+            }
+            registerOverride(101);
+            registerOverride(700);
+        });
+    })();(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() 
+        {
+          ExecuteOrDelayUntilScriptLoaded(
+            function()
+            {
+              var pairs = SP.ScriptHelpers.getDocumentQueryPairs();
+              var followDoc, itemId, listId, docName;
+              for (var key in pairs)
+              {
+                if(key.toLowerCase() == 'followdocument') 
+                  followDoc = pairs[key];
+                else if(key.toLowerCase() == 'itemid') 
+                  itemId = pairs[key];
+                else if(key.toLowerCase() == 'listid') 
+                  listId = pairs[key];
+                else if(key.toLowerCase() == 'docname') 
+                  docName = decodeURI(pairs[key]);
+              } 
+
+              if(followDoc != null && followDoc == '1' && listId!=null && itemId != null && docName != null)
+              {
+                SP.SOD.executeFunc('followingcommon.js', 'FollowDocumentFromEmail', function() 
+                { 
+                  FollowDocumentFromEmail(itemId, listId, docName);
+                });
+              }
+
+            }, 'SP.init.js');
+
+        });
+    })();if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+
+                    var workspaceElem = GetCachedElement("s4-workspace");
+                    if (workspaceElem != null)
+                    {
+                        var scrollElem = GetCachedElement("_maintainWorkspaceScrollPosition");
+                        if (scrollElem != null)
+                        {
+                            scrollElem.value = workspaceElem.scrollTop;
+                        }
+                    };
+                UpdateFormDigest('\u002fsites\u002fchinamfg\u002fCELabel', 1440000);if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABLDksxnjOzzbpgkvLcNVnhV0mdSE9/ejYYPXEQDvuz8jTE2ZPaixp3A4yJqsaaZ9TNw93j7+RM9oh0dUTsxL+1jtQbDR+ch1L1p4GNAeaLPS7CfyGGwdgKwbM6Oy0Q3Vwk+TMgdQTOIOcxEfagsXAJAa4Szvm9LsC6IPHBGqLlB1FfFbbEIk3I4Ch5NNWRxduxjAwI5raT+ZEUkah07GrWvfTuITGYKWYvzyTpH8j/veqtHEO0ZArytCDynmC10JyV216uA9/JUvxWbS/N6JcqvBmFgmF8YCyGBQWrzffUx4dRsRXpYAxeRMDyvNBUaswyx2ZFXhiAzFTaaG275wiB9F675wgOL/edqy+XoTRmB4Bvof46P+dv4BBRgmctafO2/yxRpafdcRTS86k2rpqCEx293k08O/TYDDApREupYBQ==" />
+</div>
+	<script type="text/javascript"> var submitHook = function () { return false; }; theForm._spOldSubmit = theForm.submit; theForm.submit = function () { if (!submitHook()) { this._spOldSubmit(); } }; </script>
+	<span id="DeltaSPWebPartManager">
+		
+	</span>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', ['fctl00$WebPartAdderUpdatePanel',''], [], ['ctl00$WebPartAdder',''], 90, 'ctl00');
+//]]>
+</script>
+
+	<span id="DeltaDelegateControls">
+		
+		
+	</span>
+<div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+	<a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">Turn on more accessible mode</a>
+</div>
+<div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+	<a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">Turn off more accessible mode</a>
+</div>
+<div class="s4-notdlg s4-skipribbonshortcut noindex">
+	<a href="javascript:;" onclick="document.getElementById(&#39;startNavigation&#39;).focus();" class="ms-accessible ms-acc-button" accesskey="Y">Skip Ribbon Commands</a>
+</div>
+<div class="s4-notdlg noindex">
+	<a href="javascript:;" onclick="document.getElementById(&#39;mainContent&#39;).focus();" class="ms-accessible ms-acc-button">Skip to main content</a>
+</div>
+<div id="TurnOffAnimation" style="display:none;" class="s4-notdlg noindex">
+	<a id="linkTurnOffAnimation" href="#" class="ms-accessible ms-acc-button" onclick="ToggleAnimationStatus();return false;">Turn off Animations</a>
+</div>
+<div id="TurnOnAnimation" style="display:none;" class="s4-notdlg noindex">
+	<a id="linkTurnOnAnimation" href="#" class="ms-accessible ms-acc-button" onclick="ToggleAnimationStatus();return false;">Turn on Animations</a>
+</div>
+<a id="HiddenAnchor" href="javascript:;" style="display:none;"></a>
+<div id="suiteBar" class="ms-dialogHidden noindex">
+	<div id="suiteBarLeft">
+		<div class="ms-table ms-fullWidth">
+			<div class="ms-tableRow">
+				<div class="ms-tableCell ms-verticalAlignMiddle">
+					<div class="ms-core-brandingText">SharePoint</div>
+
+				</div>
+				<div id="DeltaSuiteLinks" class="ms-core-deltaSuiteLinks">
+	
+						<div id="suiteLinksBox">
+							<ul class="ms-core-suiteLinkList">
+		<li class="ms-core-suiteLink"><a class="ms-core-suiteLink-a" href="http://spcn.tkeasia.com:81/default.aspx" id="ctl00_ctl54_ShellNewsfeed"><span>Newsfeed</span></a></li><li class="ms-core-suiteLink"><a class="ms-core-suiteLink-a" href="http://spcn.tkeasia.com:81/_layouts/15/MySite.aspx?MySiteRedirect=AllDocuments" id="ctl00_ctl54_ShellDocuments"><span>SkyDrive</span></a></li><li class="ms-core-suiteLink"><a class="ms-core-suiteLink-a" href="http://spcn.tkeasia.com:81/_layouts/15/MySite.aspx?MySiteRedirect=AllSites" id="ctl00_ctl54_ShellSites"><span>Sites<span id="Suite_ActiveLinkIndicator_Clip" class="ms-suitenav-caratBox"><img id="Suite_ActiveLinkIndicator" class="ms-suitenav-caratIcon" src="/_layouts/15/images/spcommon.png?rev=23" /></span></span></a></li>
+	</ul>
+						</div>
+				
+</div>
+			</div>
+		</div>
+	</div>
+	<div id="suiteBarRight">
+		<div id="DeltaSuiteBarRight" class="ms-core-deltaSuiteBarRight">
+	
+				<div id="welcomeMenuBox">
+  
+	 
+	<span style="display:none"><menu type='ServerMenu' id="zz1_ID_PersonalActionMenu" hideicons="true"><ie:menuitem id="zz2_ID_PersonalInformation" type="option" iconSrc="/_layouts/15/images/menuprofile.gif?rev=23" onMenuClick="javascript:GoToPage(&#39;\u002fsites\u002fchinamfg\u002fCELabel\u002f_layouts\u002f15\u002fuserdisp.aspx?Force=True&#39;);return false;" text="My Settings" description="Update your user information, language and regional settings, and alerts." menuGroupId="100"></ie:menuitem>
+	<ie:menuitem id="zz3_ID_Logout" type="option" onMenuClick="STSNavigate2(event,&#39;/sites/chinamfg/CELabel/_layouts/15/SignOut.aspx&#39;);" text="Sign Out" description="Logout of this site." menuGroupId="100"></ie:menuitem>
+	</menu></span><span  id="zz4_Menu_t" class="ms-menu-althov ms-welcome-root" title="Open Menu" onmouseover="MMU_PopMenuIfShowing(this);MMU_EcbTableMouseOverOut(this, true)" hoveractive="ms-menu-althov-active ms-welcome-root ms-welcome-hover" hoverinactive="ms-menu-althov ms-welcome-root" onclick=" CoreInvoke('MMU_Open',byid('zz1_ID_PersonalActionMenu'), MMU_GetMenuFromClientId('zz4_Menu'),event,true, null, 0); return false;" foa="MMU_GetMenuFromClientId('zz4_Menu')" oncontextmenu="ClkElmt(this); return false;" style="white-space:nowrap"><a class="ms-core-menu-root" id="zz4_Menu" accesskey="/" href="javascript:;" title="Open Menu" onfocus="MMU_EcbLinkOnFocusBlur(byid('zz1_ID_PersonalActionMenu'), this, true);" onkeydown="MMU_EcbLinkOnKeyDown(byid('zz1_ID_PersonalActionMenu'), MMU_GetMenuFromClientId('zz4_Menu'), event);" onclick=" CoreInvoke('MMU_Open',byid('zz1_ID_PersonalActionMenu'), MMU_GetMenuFromClientId('zz4_Menu'),event,true, null, 0); return false;" oncontextmenu="ClkElmt(this); return false;" menutokenvalues="MENUCLIENTID=zz4_Menu,TEMPLATECLIENTID=zz1_ID_PersonalActionMenu" serverclientid="zz4_Menu">Wei Li<span class='ms-accessible'>Use SHIFT+ENTER to open the menu (new window).</span></a><span style="height:4px;width:7px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-viewselector-arrow ms-menu-stdarw ms-core-menu-arrow"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Open Menu" style="position:absolute;left:-95px !important;top:-259px !important;" /></span><span style="height:4px;width:7px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-core-menu-arrow ms-viewselector-arrow ms-menu-hovarw"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Open Menu" style="position:absolute;left:-86px !important;top:-259px !important;" /></span></span>
+
+
+				</div>
+				<div id="suiteBarButtons">
+					   <span class="ms-siteactions-root" id="siteactiontd">
+					   
+						
+						<span style="display:none"><menu type='ServerMenu' id="zz5_SiteActionsMenuMain" hideicons="true"><ie:menuitem id="zz6_MenuItem_ShareThisSite" type="option" onMenuClick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharedWithDialog&#39;, function () { DisplaySharedWithDialog(&#39;\u002fsites\u002fchinamfg\u002fCELabel\u002f&#39;); })" text="Shared with..." description="See who&#39;s here and invite new people." menuGroupId="100"></ie:menuitem>
+	<ie:menuitem id="zz7_MenuItem_ViewAllSiteContents" type="option" iconSrc="/_layouts/15/images/allcontent32.png?rev=23" onMenuClick="STSNavigate2(event,&#39;/sites/chinamfg/CELabel/_layouts/15/viewlsts.aspx&#39;);" text="Site contents" description="View all libraries and lists in this site." menuGroupId="200"></ie:menuitem>
+	</menu></span><span id="zz8_SiteActionsMenu_t" class="ms-siteactions-normal" title="Settings" onmouseover="MMU_PopMenuIfShowing(this);MMU_EcbTableMouseOverOut(this, true)" hoveractive="ms-siteactions-normal ms-siteactions-hover" hoverinactive="ms-siteactions-normal" onclick=" CoreInvoke('MMU_Open',byid('zz5_SiteActionsMenuMain'), MMU_GetMenuFromClientId('zz8_SiteActionsMenu'),event,true, null, 0); return false;" foa="MMU_GetMenuFromClientId('zz8_SiteActionsMenu')" oncontextmenu="ClkElmt(this); return false;"><a class="ms-core-menu-root" id="zz8_SiteActionsMenu" accesskey="/" href="javascript:;" title="Settings" onkeydown="MMU_EcbLinkOnKeyDown(byid('zz5_SiteActionsMenuMain'), MMU_GetMenuFromClientId('zz8_SiteActionsMenu'));" menutokenvalues="MENUCLIENTID=zz8_SiteActionsMenu,TEMPLATECLIENTID=zz5_SiteActionsMenuMain" serverclientid="zz8_SiteActionsMenu"><span class="ms-siteactions-imgspan"><img class="ms-core-menu-buttonIcon" src="/_layouts/15/images/spcommon.png?rev=23" alt="Settings" title="Settings" /></span><span class='ms-accessible'>Use SHIFT+ENTER to open the menu (new window).</span></a></span></span>
+<span id="ms-help">
+	<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-1px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-1px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-19px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-1px&#39;;" id="ctl00_TopHelpLink" accesskey="6" title="Help" onclick="TopHelpButtonClick(&#39;HelpHome&#39;,event);return false" href="../../../sites/chinamfg/CELabel/_catalogs/masterpage/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/1033/images/spintl.png?rev=23" alt="Help" style="border:0;position:absolute;left:-19px;top:-1px;" /></span></span></a>
+</span>
+				</div>
+		
+</div>
+	</div>
+</div>
+		<div id="ms-hcTest"></div>
+		<div id="s4-ribbonrow">
+		<div id="globalNavBox" class="noindex">
+<div id="ribbonBox">
+	<div id="s4-ribboncont">
+		<div id="DeltaSPRibbon">
+	
+			
+			<div class='ms-cui-ribbonTopBars'><div class='ms-cui-topBar1'></div><div class='ms-cui-topBar2'><div id='RibbonContainer-TabRowLeft' class='ms-cui-TabRowLeft ms-core-defaultFont ms-dialogHidden'>
+				</div><div id='RibbonContainer-TabRowRight' class='ms-cui-TabRowRight s4-trc-container s4-notdlg ms-core-defaultFont'>
+					<a onmouseover="this.firstChild.firstChild.style.left=&#39;-91px&#39;; this.firstChild.firstChild.style.top=&#39;-232px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-200px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharingDialog&#39;, function(){DisplaySharingDialog(&#39;\u002fsites\u002fchinamfg\u002fCELabel&#39;)}); return false;" id="ctl00_site_share_button" title="Give people access to this site." class="ms-promotedActionButton" href="javascript:__doPostBack(&#39;ctl00$site_share_button&#39;,&#39;&#39;)" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Share" style="position:absolute;left:-200px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Share</span></a>
+					<a onmouseover="this.firstChild.firstChild.style.left=&#39;-217px&#39;; this.firstChild.firstChild.style.top=&#39;-192px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-218px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="SP.SOD.executeFunc(&#39;followingcommon.js&#39;, &#39;FollowSite&#39;, function() { FollowSite(); }); return false;" id="site_follow_button" title="Follow this site and get back to it easily from your sites page." class="ms-promotedActionButton" href="javascript:__doPostBack(&#39;ctl00$site_follow_button&#39;,&#39;&#39;)" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Follow" style="position:absolute;left:-218px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Follow</span></a>
+					
+					
+<span id="fullscreenmodebox" class="ms-qatbutton">
+	<span id="fullscreenmode">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-125px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-143px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_fullscreenmodeBtn" title="Focus on Content" onclick="SetFullScreenMode(true);PreventDefaultNavigation();return false;" href="../../../sites/chinamfg/CELabel/_catalogs/masterpage/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Focus on Content" style="border:0;position:absolute;left:-143px;top:-178px;" /></span></span></a>
+	</span>
+	<span id="exitfullscreenmode" style="display: none;">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-179px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-96px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-107px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_exitfullscreenmodeBtn" title="Focus on Content" onclick="SetFullScreenMode(false);PreventDefaultNavigation();return false;" href="../../../sites/chinamfg/CELabel/_catalogs/masterpage/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Focus on Content" style="border:0;position:absolute;left:-107px;top:-178px;" /></span></span></a>
+	</span>
+</span>
+
+
+				</div></div></div>
+		
+</div>
+	</div>
+	<span id="DeltaSPNavigation">
+		
+			<span id="ctl00_SPNavigation_ctl00_publishingRibbon"></span>
+
+		
+	</span>
+</div>
+<div id="DeltaWebPartAdderUpdatePanelContainer" class="ms-core-webpartadder">
+	
+  <div id="WebPartAdderUpdatePanelContainer">
+	<div id="ctl00_WebPartAdderUpdatePanel">
+		
+		<span id="ctl00_WebPartAdder"></span>
+	  
+	</div>
+  </div>
+
+</div>
+		</div>
+		</div>
+		<div id="s4-workspace" class="ms-core-overlay">
+		<div id="s4-bodyContainer">
+		<div id="s4-titlerow"
+			class="ms-dialogHidden s4-titlerowhidetitle">
+		<div id="titleAreaBox"
+			class="ms-noList ms-table ms-core-tableNoSpace">
+		<div id="titleAreaRow"
+			class="ms-tableRow">
+<div id="siteIcon" class="ms-tableCell ms-verticalAlignTop">
+	<div id="DeltaSiteLogo">
+	
+		<a id="ctl00_onetidProjectPropertyTitleGraphic" title="CE Label" class="ms-siteicon-a" href="/sites/chinamfg/CELabel"><img id="ctl00_onetidHeadbnnr2" class="ms-siteicon-img" name="onetidHeadbnnr0" src="http://spcn.tkeasia.com/Share%20picture%20library/logo.jpg" alt="CE Label" /></a>
+	
+</div>
+</div>
+			<div class="ms-breadcrumb-box ms-tableCell ms-verticalAlignTop">
+				<div
+					class="ms-breadcrumb-top">
+<div class="ms-breadcrumb-dropdownBox" style="display:none;">
+<span id="DeltaBreadcrumbDropdown">
+	
+</span>
+</div>
+<div id="DeltaTopNavigation" class="ms-displayInline ms-core-navigation" role="navigation">
+	
+	
+	
+		<div id="zz9_TopNavigationMenu" class=" noindex ms-core-listMenu-horizontalBox" onclick="return AjaxNavigate$OnClickHook(event, this);">
+		<ul id="zz10_RootAspMenu" class="root ms-core-listMenu-root static">
+			<li class="static selected"><a class="static selected menu-item ms-core-listMenu-item ms-displayInline ms-core-listMenu-selected ms-navedit-linkNode" tabindex="0" href="/sites/chinamfg/CELabel/SitePages/Home.aspx" accesskey="1"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">CE Label</span><span class="ms-hidden">Currently selected</span></span></a></li>
+		</ul>
+	</div>
+	
+
+</div>
+				</div>
+<h1 id="pageTitle" class="ms-core-pageTitle">
+  <span id="DeltaPlaceHolderPageTitleInTitleArea">
+	
+    CELabel查询
+
+  </span>
+  <div id="DeltaPlaceHolderPageDescription" class="ms-displayInlineBlock ms-normalWrap">
+	
+	<a href="javascript:;" id="ms-pageDescriptionDiv" style="display:none;">
+	  <span id="ms-pageDescriptionImage">&#160;</span>
+	</a>
+	<span class="ms-accessible" id="ms-pageDescription">
+	  
+	</span>
+	<script type="text/javascript">// <![CDATA[ 
+
+
+	  _spBodyOnLoadFunctionNames.push("setupPageDescriptionCallout");
+	// ]]>
+</script>
+  
+</div>
+</h1>
+			</div>
+			<div class="ms-tableCell ms-verticalAlignTop">
+<div id="DeltaPlaceHolderSearchArea" class="ms-mpSearchBox ms-floatRight">
+	
+  
+	<div id="searchInputBox">
+	  <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+		<div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style="" ><div componentid="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr"><div id="SearchBox" name="Control"><div class="ms-srch-sb ms-srch-sb-border" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sboxdiv"><input type="text" value="Search this site" maxlength="2048" accessKey="S" title="Search this site" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText"/><a title="Navigation" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_NavButton" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr').activateDefaultNavigationBehavior();return Srch.U.cancelEvent(event);})" href="javascript: {}" class="ms-srch-sb-navLink" ><img src="/_layouts/15/images/searchresultui.png?rev=23" class="ms-srch-sb-navImg" id="navImg" alt="Navigation" /></a><a title="Search" class="ms-srch-sb-searchLink" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);})" href="javascript: {}" ><img src="/_layouts/15/images/searchresultui.png?rev=23" class="ms-srch-sb-searchImg" id="searchImg" alt="Search" /></a><div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer"><div id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_AutoCompList"></div></div><div class="ms-qSuggest-container ms-shadow" id="NavDropdownListContainer"><div id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_NavDropdownList"></div></div></div></div></div><noscript><div id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_noscript">It looks like your browser does not have JavaScript enabled. Please turn on JavaScript and try again.</div></noscript><div id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1">
+
+		</div><div class="ms-clear"></div></div>
+	</div>
+	</div>
+  
+
+</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div id="contentRow">
+<div id="sideNavBox"
+	 class="ms-dialogHidden ms-forceWrap ms-noList">
+  <div id="DeltaPlaceHolderLeftNavBar" class="ms-core-navigation" role="navigation">
+	
+	
+				<a id="startNavigation" name="startNavigation" tabIndex="-1"></a>
+				
+				
+				
+				
+				
+				<div class="ms-core-sideNavBox-removeLeftMargin">
+				<div id="ctl00_PlaceHolderLeftNavBar_QuickLaunchNavigationManager">
+		
+					
+					<div id="zz11_V4QuickLaunchMenu" class=" noindex ms-core-listMenu-verticalBox" onclick="return AjaxNavigate$OnClickHook(event, this);">
+			<ul id="zz12_RootAspMenu" class="root ms-core-listMenu-root static">
+				<li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/sites/chinamfg/CELabel"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Home</span></span></a></li><li class="static selected"><a class="static selected menu-item ms-core-listMenu-item ms-displayInline ms-core-listMenu-selected ms-navedit-linkNode" tabindex="0" href="/sites/chinamfg/CELabel/_layouts/15/CELabel/SearchPage.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">CELabel</span><span class="ms-hidden">Currently selected</span></span></a></li>
+			</ul>
+		</div>
+				
+	</div>
+					
+				
+					<div class="ms-core-listMenu-verticalBox">
+						
+					</div>
+				
+				</div>
+	
+  
+</div>
+</div>
+<div id="contentBox"
+ aria-live="polite" aria-relevant="all">
+  <div id="notificationArea" class="ms-notif-box"></div>
+	<div id="DeltaPageStatusBar">
+	
+		<div id="pageStatusBar"></div>
+	
+</div>
+	<div id="DeltaPlaceHolderMain">
+	
+		<a id="mainContent" name="mainContent" tabindex="-1"></a>
+		
+    <div>
+        <table style="margin-left: 0px;">
+            <tr>
+                <td>WBS号：</td>
+                <td>
+                    <input name="ctl00$PlaceHolderMain$tbWBSNo" type="text" value="E/30013223.014" id="ctl00_PlaceHolderMain_tbWBSNo" style="width:150px;" /></td>
+                <td>项目名称：</td>
+                <td>
+                    <input name="ctl00$PlaceHolderMain$tbProjectName" type="text" id="ctl00_PlaceHolderMain_tbProjectName" style="width:150px;" /></td>
+                <td>状态：</td>
+                <td>
+                    <select name="ctl00$PlaceHolderMain$ddlStatus" id="ctl00_PlaceHolderMain_ddlStatus" style="width:75px;">
+		<option selected="selected" value="9">全部</option>
+		<option value="0">新</option>
+		<option value="1">已打印</option>
+		<option value="2">有更新</option>
+
+	</select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>
+                        每页显示
+                        ：&nbsp;
+                    </span>
+                </td>
+                <td>
+                    <select name="ctl00$PlaceHolderMain$DropDownListPageSize" id="ctl00_PlaceHolderMain_DropDownListPageSize" style="width:100px;">
+		<option selected="selected" value="10">10</option>
+		<option value="20">20</option>
+		<option value="50">50</option>
+		<option value="100">100</option>
+		<option value="200">200</option>
+		<option value="ALL">ALL</option>
+
+	</select>
+                    <input type="submit" name="ctl00$PlaceHolderMain$btnSelectedAll" value="" id="ctl00_PlaceHolderMain_btnSelectedAll" style="display: none;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="ctl00$PlaceHolderMain$btnSearch" value="查询" id="ctl00_PlaceHolderMain_btnSearch" style="margin-left: 0px;" />
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="ctl00$PlaceHolderMain$HiddenField" id="ctl00_PlaceHolderMain_HiddenField" value="10256603" />
+    </div>
+
+    <div style="overflow-y: hidden; overflow-x: auto; max-height: 100%; width: 95%; margin-top: 5px">
+        <div style="max-height: 2000px; width: 190%;">
+            <table id="ctl00_PlaceHolderMain_dataListCELabel" cellspacing="0" cellpadding="0" class="tabIncoming" style="width:100%;border-collapse:collapse;">
+		<tr>
+			<td>
+                    <tr>
+                        
+                        <th style="width: 3%; white-space: nowrap;">状态</th>
+                        <th style="width: 2%; white-space: nowrap;">版本</th>
+                        <th style="width: 15.5%; white-space: nowrap;">项目名称</th>
+                        <th style="width: 5%; white-space: nowrap;">WBS号</th>
+                        <th style="width: 2%; white-space: nowrap;">梯号</th>
+                        <th style="width: 3.25%; white-space: normal;">轿厢空重</th>
+                        <th style="width: 3.25%; white-space: normal;">对重架重量</th>
+                        <th style="width: 3.25%; white-space: normal;">预留装潢重量</th>
+                        <th style="width: 3.25%; white-space: normal;">轿厢平衡块</th>
+                        <th style="width: 3.25%; white-space: normal;">轿厢配重块</th>
+                        <th style="width: 3.25%; white-space: normal;">平衡系数</th>
+                        <th style="width: 3.25%; white-space: normal;">装潢前对重块数量</th>
+                        <th style="width: 3.25%; white-space: normal;">装潢后对重块数量</th>
+                        <th style="width: 3.25%; white-space: normal;">铸铁对重块数量</th>
+                        <th style="width: 3.25%; white-space: normal;">复合对重块数量</th>
+                        <th style="width: 3.25%; white-space: normal;">曳引机制动弹 左</th>
+                        <th style="width: 3.25%; white-space: normal;">曳引机制动弹 右</th>
+                        <th style="width: 3.25%; white-space: normal;">缓冲器制造编号 轿厢</th>
+                        <th style="width: 3.25%; white-space: normal;">缓冲器制造编号 对重</th>
+                        <th style="width: 3.25%; white-space: normal;">限速器制造编号 轿厢</th>
+                        <th style="width: 3.25%; white-space: normal;">限速器制造编号 对重</th>
+                        <th style="width: 3.25%; white-space: normal;">安全钳制造编号 轿厢</th>
+                        <th style="width: 3.25%; white-space: normal;">安全钳制造编号 对重</th>
+                        <th style="width: 3.25%; white-space: normal;">主板制造编号</th>
+                        <th style="width: 3.25%; white-space: normal;">曳引机制造编号</th>
+                        <th style="width: 3%; white-space: nowrap;">更新历史</th>
+                    </tr>
+                </td>
+		</tr><tr>
+			<td>
+                    <tr>
+                        
+
+                        <td style="width: 3%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbStatus">新</span></td>
+                        <td style="width: 2%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbVersion">-</span></td>
+                        <td style="width: 15.5%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbProjectName" name="ProjectName">大连华信（国际）软件园居住配套项目</span></td>
+                        <td style="width: 5%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbWBSNo" name="WbsNo">E/30013223.014</span></td>
+                        <td style="width: 2%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbElevatorNo" name="ElevatorNo">L14</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCarWeight" name="CarWeight">1165</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCwtFrameWeight" name="CwtFrameWeight">155</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbReserveDecorationWeight" name="ReserveDecorationWeight">0</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCarBalanceBlockQty" name="CarBalanceBlockQty">0</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCarWeightBlockQty" name="CarWeightBlockQty">0</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbBalanceRate" name="BalanceRate">0.48</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCwtBlockQtyBeforeDc" name="CwtBlockQtyBeforeDc">31</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCwtBlockQtyAfterDc" name="CwtBlockQtyAfterDc">31</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCwtBlockQtyMat1" name="CwtBlockQtyMat1">0</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbCwtBlockQtyMat2" name="CwtBlockQtyMat2">31</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbTmBrakeSpringLeft" name="TmBrakeSpringLeft"></span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbTmBrakeSpringRight" name="TmBrakeSpringRight"></span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbBufferProductionNoCar" name="BufferProductionNoCar"></span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbBufferProductionNoCw" name="BufferProductionNoCw"></span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbGovernorProductionNoCar" name="GovernorProductionNoCar"></span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbGovernorProductionNoCw" name="GovernorProductionNoCw">/</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbSaftyGearProductionNoCar" name="SaftyGearProductionNoCar"></span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbSaftyGearProductionNoCw" name="SaftyGearProductionNoCw">/</span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbMotherBoardProductionNo" name="MotherBoardProductionNo"></span></td>
+                        <td style="width: 3.25%; white-space: nowrap;">
+                            <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbTmProductionNo" name="TmProductionNo"></span>
+                            <td style="width: 3.25%; white-space: nowrap;">
+                                <span id="ctl00_PlaceHolderMain_dataListCELabel_ctl01_lbHistory">
+                                <a href="HistoryPage.aspx?WBSNo=E/30013223.014&FactoryFlag=1">更新历史</a>
+                                </span>
+                            </td>
+                    </tr>
+                </td>
+		</tr>
+	</table>
+        </div>
+    </div>
+
+    <div style="float: left; margin: 0px auto; width: 100%;">
+        
+	<!-- AspNetPager 7.4.5 Copyright:2003-2013 Webdiyer (www.webdiyer.com) -->
+	<!--记录总数只有一页，AspNetPager已自动隐藏，若需在只有一页数据时显示AspNetPager，请将AlwaysShow属性值设为true！-->
+	<!-- AspNetPager 7.4.5 Copyright:2003-2013 Webdiyer (www.webdiyer.com) -->
+
+	
+    </div>
+
+	
+</div>
+</div>
+<div id="DeltaFormDigest">
+	
+	
+		
+	
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		</div>
+		</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var _fV4UI = true;function GetPageNormalizedUrl(){    alert('This SharePoint Tags And Notes Tool link is out of date. To get the latest Tags And Notes Tool, click OK. In the Tags and Note Board dialog, click the My Tags link. From here you can access the new SharePoint Tags And Notes tool.');    return document.location.href;}var _openTagDialog_DialogUrl = '';function OpenTagDialog(dialogUrl){    _openTagDialog_DialogUrl = dialogUrl;    SafeRunFunction(_OpenTagDialogInternal, 'SocialData.js', 'TagDialogOpener');}function _OpenTagDialogInternal(){    var normalizer = PageUrlNormalizer.GetInstance();    normalizer.GetUrl('http:\u002f\u002fspcn.tkeasia.com\u002fsites\u002fchinamfg\u002fCELabel\u002f_layouts\u002f15\u002fCELabel\u002fSearchPage.aspx', function(normalizedUrl) {        var url = _openTagDialog_DialogUrl                + '?Title='      + encodeURIComponent(document.title)                + '&Src='        + 'bm'                + '&DisplayUrl=' + encodeURIComponent(document.location.href)                + '&Url='        + encodeURIComponent(normalizedUrl);        var options = 'toolbar=0,status=0,resizable=0,scrollbars=1,width=650,height=400';        if (!window.open(url, null, options))        {            document.location.href = url;        }    });}
+WebForm_InitCallback();function InitializeSocialRibbonComponentWrapper_ctl00_ctl21(){    SafeRunFunction(InitializeSocialRibbonComponent_ctl00_ctl21, 'sp.ui.socialribbon.js', 'SP.UI.SocialData.TRCRibbonComponent');}function InitializeSocialRibbonComponent_ctl00_ctl21(){    SP.UI.SocialData.TRCRibbonComponent.RegisterWithPageManager();    var ribbonComponent = SP.UI.SocialData.TRCRibbonComponent.get_Instance();    ribbonComponent['EnableSocialComment'] = true;    ribbonComponent['EnableSocialTag']     = true;    ribbonComponent['ListID']               = 'undefined';    ribbonComponent['ResAddMessage']        ='Add Tag...';    ribbonComponent['ResVerifyTypeMessage'] ='Verifying ...';    ribbonComponent.AddQuickTag = function(quickTagId)    {        SafeRunFunction(function ()        {            var adder = new SocialQuickTag('ctl00_ctl21');            adder.title        = document.title;            adder.url          = 'http:\u002f\u002fspcn.tkeasia.com\u002fsites\u002fchinamfg\u002fCELabel\u002f_layouts\u002f15\u002fCELabel\u002fSearchPage.aspx';            adder.tagged_text  = 'Tagged this page with \u0027I Like It.\u0027';            adder.failure_text = 'Failed tagging this page.';            adder.AddQuickTag(quickTagId);        }, 'SocialData.js', 'SocialQuickTag');    };    ribbonComponent.AddQuickTagToListItem = function(quickTagId)    {        var notificationId = addNotification("Add Tag...", true);        var listAndItemIds = this.SelectedListAndItemIds().split('|');        var request = new Object();        request.listid = listAndItemIds[0];        request.itemids = listAndItemIds[1];        request.id     = quickTagId;        WebForm_DoCallback('ctl00$ctl21',Sys.Serialization.JavaScriptSerializer.serialize(request),Function.createDelegate(ribbonComponent, ribbonComponent._OnSucceededCallback),notificationId,Function.createDelegate(ribbonComponent, ribbonComponent._OnFailedCallback),true);    };    return ribbonComponent;}ExecuteOrDelayUntilScriptLoaded(InitializeSocialRibbonComponentWrapper_ctl00_ctl21, 'sp.ribbon.js');function ctl00_ctl21_SocialNavControl_insertMyProfileMenu() {    var menus = document.getElementsByTagName('menu');    if (menus == null)  return;    var menu = null;    for (var i=0, len=menus.length; i<len; i++) {        if (menus[i].id.lastIndexOf('PersonalActionMenu') != -1) {            menu = menus[i]; break;        }    }    if (menu == null)   return;    var sep = null;    for (var i=0, len=menu.childNodes.length; i<len; i++) {        if (menu.childNodes[i].id == undefined || menu.childNodes[i].id == '') {            sep = menu.childNodes[i]; break;        }    }    var menuItems = menu.getElementsByTagName('ie:menuitem');    if (menuItems.length == 0)        menuItems = menu.getElementsByTagName('menuitem');    var mySettingsMenuItem = null;    for (var i=0, len=menuItems.length; i<len; i++) {        if (menuItems[i] != null && menuItems[i].id != null && menuItems[i].id.lastIndexOf('PersonalInformation') != -1) {            mySettingsMenuItem = menuItems[i];            break;        }    }    var anchorElement = mySettingsMenuItem;if (anchorElement != null) {    var elm = mySettingsMenuItem.cloneNode(true);    elm.setAttribute('menugroupid', '100');    elm.setAttribute('description', 'View and manage your profile.');    elm.setAttribute('text', 'About Me');    elm.setAttribute('onmenuclick', 'STSNavigate2(event,\'http:\u002f\u002fspcn.tkeasia.com:81\u002fPerson.aspx\')');    elm.setAttribute('id', 'ID_AboutMe');    elm.removeAttribute('iconSrc');    menu.replaceChild(elm, mySettingsMenuItem);    anchorElement = elm;}};if (typeof(_spBodyOnLoadFunctionNames) != 'undefined' && _spBodyOnLoadFunctionNames != null) { _spBodyOnLoadFunctionNames.push('ctl00_ctl21_SocialNavControl_insertMyProfileMenu'); }var _fV4UI = true;var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';_spBodyOnLoadFunctions.push(function() { EnsureScriptParams('MyLinks.js', 'RenderMySiteLinksFromServer', 'ctl00_ctl54_ShellDocuments', 'ctl00_ctl54_ShellSites'); });var _spWebPermMasks = {High:176,Low:138612833};var slNavUrl = '\u002fsites\u002fchinamfg\u002fCELabel';_spBodyOnLoadFunctionNames.push('_cUpdonetidProjectPropertyTitleGraphic');function _cUpdonetidProjectPropertyTitleGraphic(){var myd = null; if (typeof(dataonetidProjectPropertyTitleGraphic) != 'undefined') {myd = dataonetidProjectPropertyTitleGraphic;} var myc = document.getElementById('ctl00_onetidProjectPropertyTitleGraphic');_cUpdconetidProjectPropertyTitleGraphic(myd, myc);}function _cUpdconetidProjectPropertyTitleGraphic(data, ctrl){ctrl.href = slNavUrl;}function _cUpdonetidHeadbnnr2(){var myd = null; if (typeof(dataonetidHeadbnnr2) != 'undefined') {myd = dataonetidHeadbnnr2;} var myc = document.getElementById('ctl00_onetidHeadbnnr2');_cUpdconetidHeadbnnr2(myd, myc);}function _cUpdconetidHeadbnnr2(data, ctrl){SiteLogoImagePageUpdate(ctrl, data);}var _spFormDigestRefreshInterval = 1440000;
+            ExecuteOrDelayUntilScriptLoaded(
+                function() 
+                {                    
+                    Srch.ScriptApplicationManager.get_current().states = {"browserLanguage":1033,"webUILanguageName":"en-US","webDefaultLanguageName":"en-US","contextUrl":"http://spcn.tkeasia.com/sites/chinamfg/CELabel","searchCenterUrl":"http://spcn.tkeasia.com/sites/Search/Pages","showAdminDetails":false,"defaultPagesListName":"Pages","isSPFSKU":false,"defaultQueryProperties":{"culture":1033,"uiLanguage":1033,"summaryLength":180,"desiredSnippetLength":90,"enableStemming":true,"enablePhonetic":false,"enableNicknames":false,"trimDuplicates":true,"bypassResultTypes":false,"enableInterleaving":true,"enableQueryRules":true,"processBestBets":true,"enableOrderingHitHighlightedProperty":false,"hitHighlightedMultivaluePropertyLimit":-1,"processPersonalFavorites":true}};
+                    Srch.U.trace(null, 'SerializeToClient', 'ScriptApplicationManager state initialized.');
+                }, 'Search.ClientControls.js');var g_MinimalDownload = true;var g_WebServerRelativeUrl = "/sites/chinamfg/CELabel";var _spFullDownloadList = ['closeconnection', 'download', 'signout', 'xlviewer', 'wordviewer', 'wordeditor', 'powerpoint', 'powerpointframe', 'onenote', 'visiowebaccess', 'storefront', 'wopiframe', 'appredirect', 'wfstart'];
+var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+var g_clientIdDeltaPlaceHolderPageTitleInTitleArea = "DeltaPlaceHolderPageTitleInTitleArea";
+var g_clientIdDeltaPlaceHolderUtilityContent = "DeltaPlaceHolderUtilityContent";
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+
+theForm.oldOnLoad = window.onload;
+window.onload = WebForm_RestoreScrollPosition;
+
+var g_commandUIHandlers = {"name":"CommandHandlers","attrs":{},"children":[]};
+g_QuickLaunchControlIds.push("zz9_TopNavigationMenu");_spBodyOnLoadFunctionNames.push('QuickLaunchInitDroppable'); var g_zz9_TopNavigationMenu = null; function init_zz9_TopNavigationMenu() { if (g_zz9_TopNavigationMenu == null) g_zz9_TopNavigationMenu = $create(SP.UI.AspMenu, null, null, null, $get('zz9_TopNavigationMenu')); } ExecuteOrDelayUntilScriptLoaded(init_zz9_TopNavigationMenu, 'SP.Core.js');
+
+                    ExecuteOrDelayUntilScriptLoaded(
+                        function() 
+                        {
+                            if ($isNull($find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr')))
+                            {
+                                var sb = $create(Srch.SearchBox, {"delayLoadTemplateScripts":true,"initialPrompt":"Search this site","messages":[],"navigationNodes":[{"id":1001,"name":"Everything","url":"{searchcenterurl}/results.aspx","promptString":"Search everything"},{"id":1002,"name":"People","url":"{searchcenterurl}/peopleresults.aspx","promptString":"Search people"},{"id":1003,"name":"Conversations","url":"{searchcenterurl}/conversationresults.aspx","promptString":"Search conversations"},{"id":0,"name":"This Site","url":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","promptString":"Search this site"}],"queryGroupNames":["MasterPage"],"renderTemplateId":"~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchBox_Compact.js","resultsPageAddress":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","serverInitialRender":true,"showDataErrors":true,"showNavigation":true,"states":{},"tryInplaceQuery":false}, null, null, $get("ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr"));
+                                sb.activate('Search this site', 'ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox', 'ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sboxdiv', 'ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_NavButton', 'ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_AutoCompList', 'ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_NavDropdownList', 'ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink', 'ms-srch-sbprogress', 'ms-srch-sb-prompt ms-helperText');
+                            }
+                        }, 'Search.ClientControls.js');g_QuickLaunchControlIds.push("zz11_V4QuickLaunchMenu");_spBodyOnLoadFunctionNames.push('QuickLaunchInitDroppable'); var g_zz11_V4QuickLaunchMenu = null; function init_zz11_V4QuickLaunchMenu() { if (g_zz11_V4QuickLaunchMenu == null) g_zz11_V4QuickLaunchMenu = $create(SP.UI.AspMenu, null, null, null, $get('zz11_V4QuickLaunchMenu')); } ExecuteOrDelayUntilScriptLoaded(init_zz11_V4QuickLaunchMenu, 'SP.Core.js');
+//]]>
+</script>
+</form>
+	<span id="DeltaPlaceHolderUtilityContent">
+		
+	</span>
+	<script type="text/javascript">// <![CDATA[ 
+
+
+		var g_Workspace = "s4-workspace";
+	// ]]>
+</script>
+</body>
+</html>
